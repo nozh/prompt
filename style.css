@@ -1,0 +1,15 @@
+
+.row {
+    height: 100vh; /* Set the row to full viewport height */
+}
+
+.prompt-output {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Full height of parent */
+}
+
+.prompt-output textarea {
+    flex-grow: 1; /* Allow textarea to fill the space */
+    resize: none; /* Optional: Disable manual resizing */
+}
