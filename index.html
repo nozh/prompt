@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT Prompt Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <!-- Input fields section -->
+            <div class="col-md-8 p-4">
+                <!-- Role Selection -->
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" class="form-control">
+                        <option value="lawyer">Lawyer</option>
+                        <option value="poet">Poet</option>
+                        <!-- Add more roles here -->
+                    </select>
+                </div>
+
+                <!-- Action Input -->
+                <div class="form-group">
+                    <label for="action">Action:</label>
+                    <input type="text" id="action" class="form-control" placeholder="Write, Explain, Edit...">
+                </div>
+
+                <!-- Instruction Input -->
+                <div class="form-group">
+                    <label for="instruction">Instruction:</label>
+                    <input type="text" id="instruction" class="form-control" placeholder="Write instructions...">
+                </div>
+
+                <!-- Algorithm Input -->
+                <div class="form-group">
+                    <label for="algorithm">Algorithm:</label>
+                    <input type="text" id="algorithm" class="form-control" placeholder="Describe algorithm...">
+                </div>
+
+                <!-- Style/Tone of Voice Selection -->
+                <div class="form-group">
+                    <label for="style">Style/Tone of Voice:</label>
+                    <select id="style" class="form-control">
+                        <option value="official">Official</option>
+                        <option value="artistic">Artistic</option>
+                        <!-- Add more styles here -->
+                    </select>
+                </div>
+
+                <!-- Requirements Checkboxes -->
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="terminology" class="form-check-input">
+                        <label class="form-check-label" for="terminology">Professional Terminology</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="citation" class="form-check-input">
+                        <label class="form-check-label" for="citation">Citations</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="examples" class="form-check-input">
+                        <label class="form-check-label" for="examples">Examples</label>
+                    </div>
+                    <!-- Add more checkboxes as needed -->
+                </div>
+
+                <!-- Type of Document Dropdown -->
+                <div class="form-group">
+                    <label for="documentType">Type of Document:</label>
+                    <select id="documentType" class="form-control">
+                        <option value="letter">Letter</option>
+                        <option value="plan">Plan</option>
+                        <!-- Add more document types here -->
+                    </select>
+                </div>
+
+                <!-- Context Field -->
+                <div class="form-group">
+                    <label for="context">Context:</label>
+                    <textarea id="context" class="form-control" placeholder="Enter context..."></textarea>
+                </div>
+            </div>
+
+            <!-- Generated prompt section -->
+            <div class="col-md-4 p-4 bg-light">
+                <div class="form-group">
+                    <label for="result">Generated Prompt:</label>
+                    <textarea id="result" class="form-control h-100" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for prompt generation and local storage (add your script.js content here) -->
+    <script src="script.js"></script>
+</body>
+</html>
