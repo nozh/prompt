@@ -13,7 +13,7 @@ function generatePrompt() {
     if (document.getElementById("examples").checked) requirements.push("Examples");
     // Add logic for other checkboxes
 
-    var prompt = "Role: " + role + "\nAction: " + action + "\nInstruction: " + instruction + "\nAlgorithm: " + algorithm + "\nStyle/Tone: " + style + "\nRequirements: " + requirements.join(", ") + "\nDocument Type: " + documentType + "\nContext: " + context;
+    var prompt = "Act as " + role + "\n" + action + "\nInstruction: " + instruction + "\nAlgorithm: " + algorithm + "\nStyle/Tone: " + style + "\nRequirements: " + requirements.join(", ") + "\nDocument Type: " + documentType + "\nContext: " + context;
 
     document.getElementById("result").value = prompt;
 }
